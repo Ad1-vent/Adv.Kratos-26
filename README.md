@@ -10,7 +10,7 @@ Ongoing/Completed tasks:
 
 ---
 
-**Task 2:** Creating a system to read the values from a power logger (the INA-219) and transmit them to the base-station. `[complete, final testing pending]`
+**Task 2:** Rover Power Monitoring, Display & Telemetry 
 
 Tasks:
 - Establishing a UART communication line between the required MCUs (the ESP32 and the STM32 Nucleo-F446RE)
@@ -22,10 +22,10 @@ Tasks:
 
 ---
 
-**Task 3:** Cuvette Motor Interfacing:
+**Task 3:** Cuvette Motor to STM32 Interfacing
 
 Tasks:
-- Interfacing a stepper motor via the A4588 stepper motor driver to the STM32
+- Interfacing a stepper motor via the A4988 stepper motor driver to the STM32
 - Created a custom program called `move_to_cuvette(int cuv_no)` that moves the motor to 5 custom positions it to 5 custom positions for 5 different cuvettes
 
 `[complete]`
