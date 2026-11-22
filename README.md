@@ -1,13 +1,29 @@
 # Adv.Kratos-26
 Ongoing/Completed tasks:
 
-Task 1: Creating a SSR circuit diagram on LT-Spice, showcasing the power distribution system of the rover along with its dual killswitch feature. [complete]
+Task 1: Creating a SSR circuit simulation on Proteus, showcasing 
+            a) the power distribution system of the rover 
+            b) the dual killswitch feature. 
+            c) a visual representation of the power logging system
+            
+[complete]
+
 
 Task 2: Creating a system to read the values from a power logger (the INA-219) and transmit them to the base-station.  [complete, final testing pending]
-Subtasks:
+
+Tasks:
       -Establishing a UART communication line between the required MCUs (the ESP32 and the STM32 Nucleo-F446RE)
       -Interfacing and reading the values of the INA219 using the ESP32.
-      -Wrapping the data and sending a compact message to the STM32 and therefore to the base-station.
+      -Interfacing an ADAFruit OLED display (attached on the rover) and displaying the power values on the display (1 reading every 4 seconds)
+      -Wrapping the data and sending a float array to the STM32 and therefore to the base-station.
 
-Task 3: Interfacing a stepper motor to the STM32 to move it to 5 custom positions for 5 different cuvettes using the function move_to_cuvette(int cuv_no) [testing pending]
+[final testing pending]
+
+Task 3: Cuvette Motor Interfacing:
+
+Tasks:
+      -Interfacing a stepper motor via the A4588 stepper motor driver to the STM32
+      -Created a custom program called move_to_cuvette(int cuv_no) that moves the motor to 5 custom positions it to 5 custom positions for 5 different cuvettes 
+
+[complete]
 
